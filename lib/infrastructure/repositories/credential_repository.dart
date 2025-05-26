@@ -1,5 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:nom_now/domain/enums/user_role.dart';
+import 'package:nom_now/domain/models/enums/user_role.dart';
 import 'package:nom_now/domain/repositories/i_credential_repository.dart';
 
 class CredentialRepository implements ICredentialRepository {

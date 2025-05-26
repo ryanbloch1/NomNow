@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:nom_now/models/enums/user_role.dart';
-import 'package:nom_now/domain/services/onboarding_service.dart';
+import 'package:nom_now/domain/models/enums/user_role.dart';
+import 'package:nom_now/domain/services/i_onboarding_service.dart';
 
 @RoutePage()
 class RoleSelectionScreen extends StatefulWidget {

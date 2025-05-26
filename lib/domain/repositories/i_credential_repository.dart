@@ -1,4 +1,4 @@
-import 'package:nom_now/domain/enums/user_role.dart';
+import 'package:nom_now/domain/models/enums/user_role.dart';
 
 abstract class ICredentialRepository {
   /// Authentication state
