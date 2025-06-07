@@ -16,7 +16,7 @@ class CustomerHomeScreen extends StatelessWidget {
               floating: true,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back, color: Colors.black),
-                onPressed: () => context.router.pop(),
+                onPressed: () => context.router.maybePop(),
               ),
               title: Row(
                 children: [

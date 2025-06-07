@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:nom_now/app/router.gr.dart';
 import 'package:nom_now/domain/models/enums/user_role.dart';
-import 'package:nom_now/domain/services/i_onboarding_service.dart';
 
 @RoutePage()
 class RoleSelectionScreen extends StatefulWidget {
@@ -20,7 +20,7 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () => context.router.pop(),
+          onPressed: () => context.router.maybePop(),
         ),
       ),
       body: SafeArea(
@@ -58,9 +58,9 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
               Expanded(
                 child: GestureDetector(
                   onTap: () async {
-                    await OnboardingService.saveUserRole(UserRole.customer);
+                    // await OnboardingService.saveUserRole(UserRole.customer);
                     if (!mounted) return;
-                    context.router.replace(const CustomerHomeRoute());
+                    context.router.replace(const CustomerHomeScreenRoute());
                   },
                   child: Card(
                     elevation: 4,
@@ -119,9 +119,8 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
               Expanded(
                 child: GestureDetector(
                   onTap: () async {
-                    await OnboardingService.saveUserRole(UserRole.chef);
-                    if (!mounted) return;
-                    context.router.replace(const ChefRegistrationRoute());
+                    // await OnboardingService.saveUserRole(UserRole.chef);
+                    context.router.replace(const ChefRegistrationScreenRoute());
                   },
                   child: Card(
                     elevation: 4,

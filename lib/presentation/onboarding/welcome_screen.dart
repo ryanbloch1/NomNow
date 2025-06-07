@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:nom_now/app/router.dart';
+import 'package:nom_now/app/router.gr.dart';
 
 @RoutePage()
 class WelcomeScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class WelcomeScreen extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () => context.router.pop(),
+          onPressed: () => context.router.maybePop(),
         ),
       ),
       body: SafeArea(
@@ -58,8 +59,7 @@ class WelcomeScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () async {
-                    // await OnboardingService.clearOnboardingData(); //TODO add bloc
-                    context.router.replace(const RoleSelectionRoute());
+                    context.router.replace(const RoleSelectionScreenRoute());
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
