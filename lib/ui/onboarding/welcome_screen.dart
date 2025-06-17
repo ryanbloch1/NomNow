@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:nom_now/app/router.dart';
 import 'package:nom_now/app/router.gr.dart';
 
 @RoutePage()
@@ -13,10 +12,6 @@ class WelcomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () => context.router.maybePop(),
-        ),
       ),
       body: SafeArea(
         child: Padding(

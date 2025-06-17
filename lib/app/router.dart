@@ -9,11 +9,5 @@ class AppRouter extends RootStackRouter {
           page: WelcomeScreenRoute.page,
         ),
         AutoRoute(page: RoleSelectionScreenRoute.page, initial: true),
-        AutoRoute(
-          page: CustomerHomeScreenRoute.page,
-        ),
-        AutoRoute(
-          page: ChefRegistrationScreenRoute.page,
-        ),
       ];
 }
