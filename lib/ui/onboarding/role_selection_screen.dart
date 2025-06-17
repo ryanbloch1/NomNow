@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:nom_now/app/router.gr.dart';
 import 'package:nom_now/domain/models/enums/user_role.dart';
 import 'package:nom_now/domain/services/I_credential_store_service.dart';
 import 'package:nom_now/injection.dart';
@@ -7,14 +8,9 @@ import 'package:nom_now/injection.dart';
 part 'widgets/role_selection_card.dart';
 
 @RoutePage()
-class RoleSelectionScreen extends StatefulWidget {
+class RoleSelectionScreen extends StatelessWidget {
   const RoleSelectionScreen({super.key});
 
-  @override
-  State<RoleSelectionScreen> createState() => _RoleSelectionScreenState();
-}
-
-class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,8 +57,8 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
                   await sl<ICredentialStoreService>()
                       .saveUserRole(UserRole.customer)
                       .then((_) {
-                    if (!mounted) return;
-                    // context.router.push(const CustomerHomeScreenRoute());
+                    context.router
+                        .push(const CustomerRegistrationScreenRoute());
                   });
                 },
               ),
@@ -75,8 +71,7 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
                   await sl<ICredentialStoreService>()
                       .saveUserRole(UserRole.chef)
                       .then((_) {
-                    if (!mounted) return;
-                    // context.router.push(const ChefRegistrationScreenRoute());
+                    context.router.push(const ChefRegistrationScreenRoute());
                   });
                 },
               ),

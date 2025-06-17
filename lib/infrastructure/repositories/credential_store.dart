@@ -1,4 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:injectable/injectable.dart';
 import 'package:nom_now/domain/models/enums/user_role.dart';
 
 enum StorageKeys {
@@ -8,6 +9,7 @@ enum StorageKeys {
   const StorageKeys(this.name);
 }
 
+@LazySingleton()
 class CredentialStore {
   CredentialStore(this._storage);
 
