@@ -37,6 +37,8 @@ dependencies:
   get_it: ^8.0.3
   injectable: ^2.5.0
   injectable_generator: ^2.6.2
+  supabase_flutter: ^2.9.1
+  fpdart: ^1.1.1
 
 
   # The following adds the Cupertino Icons font to your application.
