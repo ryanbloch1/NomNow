@@ -1,9 +1,9 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import 'package:nom_now/core/database/models/profile.dart';
-import 'package:nom_now/core/database/services/supabase_service.dart';
-import 'package:nom_now/core/error/failure.dart';
+import 'package:nom_now/domain/models/failure.dart';
+import 'package:nom_now/domain/models/profile.dart';
 import 'package:nom_now/domain/repositories/i_profile_repository.dart';
+import 'package:nom_now/infrastructure/services/supabase_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 @LazySingleton(as: IProfileRepository)

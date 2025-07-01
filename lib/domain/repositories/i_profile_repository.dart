@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
-import 'package:nom_now/core/database/models/profile.dart';
-import 'package:nom_now/core/error/failure.dart';
+import 'package:nom_now/domain/models/failure.dart';
+import 'package:nom_now/domain/models/profile.dart';
 
 abstract class IProfileRepository {
   Future<Either<Failure, Profile?>> getProfile(String userId);
