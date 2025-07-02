@@ -111,7 +111,6 @@ class _CustomerRegistrationScreenState
           key: _formKey,
           child: Column(
             children: [
-              // Header
               Container(
                 padding: const EdgeInsets.all(24.0),
                 child: Column(
