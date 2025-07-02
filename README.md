@@ -8,7 +8,7 @@ A Flutter-based food delivery platform connecting customers with local home chef
 
 NomNow is a modern food delivery application that brings the authentic taste of home-cooked meals to your doorstep. Unlike traditional delivery apps, NomNow connects you with local home chefs who prepare fresh, personalized meals in their own kitchens.
 
-## Features
+## Upcoming Features:
 
 ### For Customers 🛒
 
