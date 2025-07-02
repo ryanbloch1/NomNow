@@ -30,7 +30,7 @@ NomNow is a modern food delivery application that brings the authentic taste of 
 ## Tech Stack
 
 - **Frontend**: Flutter (Dart)
-- **State Management**: GetIt + Injectable
+- **State Management**: Bloc
 - **Navigation**: Auto Route
 - **Backend**: Supabase (PostgreSQL + Real-time + Auth)
 - **Storage**: Flutter Secure Storage
