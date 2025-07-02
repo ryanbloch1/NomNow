@@ -42,3 +42,85 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Additional Flutter/Dart files
+*.freezed.dart
+*.g.dart
+*.gr.dart
+*.config.dart
+*.mocks.dart
+
+# Generated files (but NOT platform-specific plugin registrants)
+lib/generated/
+lib/**/*.g.dart
+lib/**/*.freezed.dart
+lib/**/*.gr.dart
+lib/**/*.config.dart
+
+# DO NOT ignore these - they should be committed:
+# ios/Podfile.lock
+# linux/flutter/generated_plugin_registrant.cc
+# linux/flutter/generated_plugins.cmake
+# macos/Flutter/GeneratedPluginRegistrant.swift
+# windows/flutter/generated_plugin_registrant.cc
+# windows/flutter/generated_plugins.cmake
+
+# Coverage
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE specific files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
